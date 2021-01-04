@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">SI ELANG</string>
+    <string name="sub_app_name">Sistem Informasi E-Tilang</string>
+    <string name="label_latest_product">Beranda</string>
+    <string name="sub_header_janda">SI ELANG adalah aplikasi tilang elektronik untuk membantu kepolisian dalam melakukan penilangan agar lebih aman dan mengurangi penggunaan kertas</string>
+    <string name="label_password">Password</string>
+    <string name="label_email">Email</string>
+    <string name="label_register">Anda belum terdaftar? silahkan registrasi disini</string>
+    <string name="label_name">Nama lengkap</string>
+    <string name="label_login">Sudah terdaftar? login disini</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_hint_produect">Janda Jeans</string>
+    <string name="label_hint_product_price">Rp.50.000</string>
+    <string name="label_details">Details</string>
+    <string name="label_hint_content"></string>
+    <string name="label_checkout">Checkout</string>
+    <string name="label_shipping_address">Alamat Pengiriman</string>
+    <string name="label_hint_shipping_address">Masukan alamat pengiriman produk</string>
+    <string name="label_thanks">Terima Kasih!</string>
+    <string name="label_thanks_content">Pesanan anda sedang kami proses. Silahkan bersabar, karena admin janda sedang
+        mengantar Anak sekolah.
+    </string>
+    <string name="label_ok">OK</string>
+    <string name="label_riwayat">Riwayat</string>
+    <string name="label_riwayat_kosong">Riwayat Kosong</string>
+    <string name="label_create_product">Tambahkan data pelanggar</string>
+    <string name="label_nama_pelanggar">Nama</string>
+    <string name="label_no_register">Tilang No.Register</string>
+    <string name="label_jenis_kelamin">Jenis Kelamin</string>
+    <string name="label_nama_kesatuan">Kesatuan</string>
+    <string name="label_profile">Profil</string>
+    <string name="label_alamat">Alamat</string>
+    <string name="label_no_ktp">No.KTP</string>
+    <string name="label_pekerjaan">Pekerjaan</string>
+    <string name="label_pendidikan">Pendidikan</string>
+    <string name="label_umur">Umur</string>
+    <string name="label_ttl">Tempat Tanggal Lahir</string>
+    <string name="label_no_kendaraan">No.Pol Kendaraan</string>
+    <string name="label_jenis_kendaraan">Jenis Kendaraan</string>
+    <string name="label_merek_kendaraan">Merek Kendaraan</string>
+    <string name="label_hari">Hari dan Tanggal Ditilang</string>
+    <string name="label_jam">Jam</string>
+    <string name="label_jalan">Jalan</string>
+    <string name="label_wilayah">Wilayah</string>
+    <string name="label_melanggar_pasal">Melanggar Pasal</string>
+    <string name="label_jumlah_titipan">Jumlah Titipan</string>
+    <string name="label_jumlah_angka_pinalti">Jumlah Angka Pinalti</string>
+    <string name="label_nama_petugas">Nama Petugas</string>
+    <string name="label_pangkat">Pangkat</string>
+</resources>

@@ -1,0 +1,14 @@
+<RelativeLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+            android:id="@+id/iv_latest_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo_polisi"
+            android:scaleType="centerCrop"/>
+
+</RelativeLayout>

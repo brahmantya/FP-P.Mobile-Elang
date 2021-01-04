@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fancy="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/app_bar_create_product"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_marginTop="50dp"
+                                                       android:layout_marginStart="20dp"
+                                                       android:layout_marginEnd="20dp"
+                                                       app:passwordToggleEnabled="true"
+                                                       app:passwordToggleTint="@color/colorPrimaryDark"
+                                                       android:textColorHint="@color/colorPrimaryDark"
+                                                       android:id="@+id/ll_no_register">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                                                             android:layout_height="wrap_content"
+                                                             android:hint="@string/label_no_register"
+                                                             android:textColor="@color/colorPrimaryDark"
+                                                             android:inputType="number"
+                                                             android:textSize="14sp"
+                                                             android:textColorHint="@color/colorPrimaryDark"
+                                                             android:id="@+id/et_no_register"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_marginStart="20dp"
+                                                       android:layout_marginEnd="20dp"
+                                                       app:passwordToggleEnabled="true"
+                                                       app:passwordToggleTint="@color/colorPrimaryDark"
+                                                       android:textColorHint="@color/colorPrimaryDark"
+                                                       android:id="@+id/ll_nama_kesatuan">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                                                             android:layout_height="wrap_content"
+                                                             android:hint="@string/label_nama_kesatuan"
+                                                             android:textColor="@color/colorPrimaryDark"
+                                                             android:inputType="textCapWords"
+                                                             android:textSize="14sp"
+                                                             android:textColorHint="@color/colorPrimaryDark"
+                                                             android:id="@+id/et_nama_kesatuan"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_marginStart="20dp"
+                                                       android:layout_marginEnd="20dp"
+                                                       app:passwordToggleEnabled="true"
+                                                       app:passwordToggleTint="@color/colorPrimaryDark"
+                                                       android:textColorHint="@color/colorPrimaryDark"
+                                                       android:id="@+id/ll_nama_pelanggar">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                                                             android:layout_height="wrap_content"
+                                                             android:hint="@string/label_nama_pelanggar"
+                                                             android:textColor="@color/colorPrimaryDark"
+                                                             android:inputType="textCapWords"
+                                                             android:textSize="14sp"
+                                                             android:textColorHint="@color/colorPrimaryDark"
+                                                             android:id="@+id/et_nama_pelanggar"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_marginStart="20dp"
+                                                       android:layout_marginEnd="20dp"
+                                                       android:layout_marginTop="10dp"
+                                                       android:textColorHint="@color/colorPrimaryDark"
+                                                       android:id="@+id/ll_jenis_kelamin">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                                                             android:layout_height="wrap_content"
+                                                             android:hint="@string/label_jenis_kelamin"
+                                                             android:textColor="@color/colorPrimaryDark"
+                                                             android:textSize="14sp"
+                                                             android:inputType="textCapWords"
+                                                             android:textColorHint="@color/colorPrimaryDark"
+                                                             android:id="@+id/et_jenis_kelamin"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/ll_alamat">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_alamat"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="textCapWords"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_alamat"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/ll_no_ktp">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_no_ktp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_no_ktp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/ll_pekerjaan">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_pekerjaan"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="textCapWords"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_pekerjaan"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/ll_pendidikan">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_pendidikan"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp"
+                    android:inputType="textCapWords"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_pendidikan"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/ll_umur">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_umur"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_umur"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/ll_ttl">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_ttl"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="textCapWords"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_ttl"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/ll_no_kendaraan">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_no_kendaraan"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="textCapWords"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_no_kendaraan"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/ll_jenis_kendaraan">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_jenis_kendaraan"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp"
+                    android:inputType="textCapWords"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_jenis_kendaraan"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/ll_merek_kendaraan">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_merek_kendaraan"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="textCapWords"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_merek_kendaraan"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/ll_hari">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_hari"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="textCapWords"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_hari"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/ll_jam">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_jam"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="textCapWords"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_jam"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/ll_jalan">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_jalan"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="textCapWords"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_jalan"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/ll_wilayah">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_wilayah"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp"
+                    android:inputType="textCapWords"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_wilayah"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/ll_melanggar_pasal">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_melanggar_pasal"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="textCapWords"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_melanggar_pasal"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/ll_jumlah_titipan">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_jumlah_titipan"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_jumlah_titipan"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/ll_jumlah_angka_pinalti">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_jumlah_angka_pinalti"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_jumlah_angka_pinalti"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/ll_nama_petugas">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_nama_petugas"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp"
+                    android:inputType="textCapWords"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_nama_petugas"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/ll_pangkat">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_pangkat"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="textCapWords"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_pangkat"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/ll_kesatuan">
+
+            <android.support.design.widget.TextInputEditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_nama_kesatuan"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="textCapWords"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_kesatuan"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="40dp"
+                fancy:fb_textColor="@color/colorPrimary"
+                fancy:fb_text="Simpan"
+                fancy:fb_defaultColor="@color/colorAccent"
+                fancy:fb_focusColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

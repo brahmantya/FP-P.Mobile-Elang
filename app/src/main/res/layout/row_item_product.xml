@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="12"
+        android:padding="16dp">
+
+    <ImageView
+            android:id="@+id/iv_product"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profil"/>
+
+    <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/tv_no_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:maxLines="1"
+                tools:text="No Register"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:text="Nama Pelanggar"
+                android:id="@+id/tv_nama_pelanggar" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:text="Merek Kendaraan"
+                android:id="@+id/tv_merek_kendaraan" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:text="No Kendaraan"
+                android:id="@+id/tv_no_kendaraan" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:text="Melanggar Pasal"
+                android:id="@+id/tv_melanggar_pasal" />
+
+    </LinearLayout>
+
+</LinearLayout>
